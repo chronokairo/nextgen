@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="NextGen Learning Hub - Plataforma educacional moderna para habilidades emergentes e profissões do futuro">
+    <meta name="keywords" content="cursos online, tecnologia, IA, blockchain, programação, design, futuro">
+    <meta name="author" content="Whizzkun">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nextgen-learning-hub.com/">
+    <meta property="og:title" content="NextGen Learning Hub - Habilidades do Futuro">
+    <meta property="og:description"
+        content="Aprenda as tecnologias mais demandadas do mercado com nossa plataforma educacional moderna">
+    <meta property="og:image" content="./assets/images/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://nextgen-learning-hub.com/">
+    <meta property="twitter:title" content="NextGen Learning Hub - Habilidades do Futuro">
+    <meta property="twitter:description"
+        content="Aprenda as tecnologias mais demandadas do mercado com nossa plataforma educacional moderna">
+    <meta property="twitter:image" content="./assets/images/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="./assets/icons/favicon.svg">
+    <link rel="icon" type="image/png" href="./assets/icons/favicon.png">
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="NextGen">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>NextGen Learning Hub - Habilidades do Futuro</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
+                        fill="url(#gradient-nav)" />
+                    <defs>
+                        <linearGradient id="gradient-nav" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-text">NextGen</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Início</a></li>
+                    <li><a href="#courses" class="nav-link">Cursos</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#pricing" class="nav-link">Preços</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="btn btn-outline">Entrar</button>
+                <button class="btn btn-primary">Começar</button>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-background">
+                <div class="hero-grid"></div>
+                <div class="hero-gradient"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-icon">🚀</span>
+                        <span>Mais de 10.000 alunos já transformaram suas carreiras</span>
+                    </div>
+
+                    <h1 class="hero-title">
+                        Domine as <span class="gradient-text">Habilidades do Futuro</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Aprenda Inteligência Artificial, Blockchain, Design Avançado e muito mais.
+                        Cursos práticos com projetos reais e mentoria personalizada.
+                    </p>
+
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-large">
+                            Explorar Cursos
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <button class="btn btn-secondary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polygon points="5,3 19,12 5,21" />
+                            </svg>
+                            Ver Demo
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Cursos Disponíveis</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10k+</div>
+                            <div class="stat-label">Alunos Ativos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">Taxa de Satisfação</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-card">
+                        <div class="card-header">
+                            <div class="card-avatar"></div>
+                            <div class="card-info">
+                                <div class="card-name">IA Generativa</div>
+                                <div class="card-progress">85% concluído</div>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="floating-elements">
+                        <div class="floating-icon ai">🤖</div>
+                        <div class="floating-icon blockchain">⛓️</div>
+                        <div class="floating-icon design">🎨</div>
+                        <div class="floating-icon code">💻</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Por que escolher a NextGen?</h2>
+                    <p class="section-description">
+                        Nossa metodologia combina teoria e prática para acelerar seu aprendizado
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Projetos Reais</h3>
+                        <p class="feature-description">
+                            Aprenda construindo projetos que você pode incluir no seu portfólio profissional
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Mentoria 1:1</h3>
+                        <p class="feature-description">
+                            Sessões individuais com especialistas da indústria para acelerar seu crescimento
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Aprendizado Adaptativo</h3>
+                        <p class="feature-description">
+                            IA personaliza seu percurso de aprendizado baseado no seu progresso e objetivos
+                        </p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                                <polyline points="3.27,6.96 12,12.01 20.73,6.96" />
+                                <line x1="12" y1="22.08" x2="12" y2="12" />
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Certificação Reconhecida</h3>
+                        <p class="feature-description">
+                            Certificados validados por empresas parceiras e reconhecidos no mercado
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Preview -->
+        <section id="courses" class="courses-preview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Cursos em Destaque</h2>
+                    <p class="section-description">
+                        Explore nossas trilhas de aprendizado mais populares
+                    </p>
+                </div>
+
+                <div class="courses-grid">
+                    <div class="course-card featured">
+                        <div class="course-image">
+                            <div class="course-badge">Mais Popular</div>
+                            <div class="course-icon">🤖</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level">Intermediário</span>
+                                <span class="course-duration">8 semanas</span>
+                            </div>
+                            <h3 class="course-title">Inteligência Artificial Aplicada</h3>
+                            <p class="course-description">
+                                Domine Machine Learning, Deep Learning e IA Generativa com projetos práticos
+                            </p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <span class="stat-icon">👥</span>
+                                    <span>2.5k alunos</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-icon">⭐</span>
+                                    <span>4.9 (350)</span>
+                                </div>
+                            </div>
+                            <div class="course-price">
+                                <span class="price-current">R$ 297</span>
+                                <span class="price-old">R$ 497</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <div class="course-icon">⛓️</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level">Avançado</span>
+                                <span class="course-duration">6 semanas</span>
+                            </div>
+                            <h3 class="course-title">Blockchain & Web3</h3>
+                            <p class="course-description">
+                                Desenvolvimento de Smart Contracts, DeFi e aplicações descentralizadas
+                            </p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <span class="stat-icon">👥</span>
+                                    <span>1.8k alunos</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-icon">⭐</span>
+                                    <span>4.8 (210)</span>
+                                </div>
+                            </div>
+                            <div class="course-price">
+                                <span class="price-current">R$ 397</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card">
+                        <div class="course-image">
+                            <div class="course-icon">🎨</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level">Iniciante</span>
+                                <span class="course-duration">4 semanas</span>
+                            </div>
+                            <h3 class="course-title">UI/UX Design Avançado</h3>
+                            <p class="course-description">
+                                Design Systems, Prototipagem e metodologias de Design Thinking
+                            </p>
+                            <div class="course-stats">
+                                <div class="stat">
+                                    <span class="stat-icon">👥</span>
+                                    <span>3.2k alunos</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-icon">⭐</span>
+                                    <span>4.9 (420)</span>
+                                </div>
+                            </div>
+                            <div class="course-price">
+                                <span class="price-current">R$ 197</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courses-cta">
+                    <a href="navegacao/courses.html" class="btn btn-primary">Ver Todos os Cursos</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
+                                fill="url(#gradient-footer)" />
+                            <defs>
+                                <linearGradient id="gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#8b5cf6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="brand-text">NextGen</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando carreiras através da educação em tecnologias emergentes.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Plataforma</h4>
+                        <ul>
+                            <li><a href="#courses">Cursos</a></li>
+                            <li><a href="#mentorship">Mentoria</a></li>
+                            <li><a href="#certificates">Certificados</a></li>
+                            <li><a href="#community">Comunidade</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#guides">Guias</a></li>
+                            <li><a href="#webinars">Webinars</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#help">Central de Ajuda</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                            <li><a href="#status">Status</a></li>
+                            <li><a href="#updates">Atualizações</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextGen Learning Hub. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
