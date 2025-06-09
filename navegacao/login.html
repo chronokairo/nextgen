@@ -4,9 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Conheça os planos da NextGen Learning Hub - Escolha o melhor para sua evolução profissional">
-    <title>Preços - NextGen Learning Hub</title>
+    <meta name="description" content="Faça login na NextGen Learning Hub e continue sua jornada de aprendizado">
+    <title>Login - NextGen Learning Hub</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,522 +15,264 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/nextgen/assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
 </head>
 
-<body>
-    <!-- Header -->
-    <header class="header">
+<body class="auth-page">
+    <!-- Header Simplified -->
+    <header class="auth-header">
         <nav class="nav container">
             <div class="nav-brand">
-                <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
-                        fill="url(#gradient-nav)" />
-                    <defs>
-                        <linearGradient id="gradient-nav" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#6366f1" />
-                            <stop offset="100%" stop-color="#8b5cf6" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-                <span class="brand-text">NextGen</span>
-            </div>
-
-            <div class="nav-menu" id="nav-menu">
-                <ul class="nav-list">
-                    <li><a href="../index.html" class="nav-link">Início</a></li>
-                    <li><a href="courses.html" class="nav-link">Cursos</a></li>
-                    <li><a href="about.html" class="nav-link">Sobre</a></li>
-                    <li><a href="pricing.html" class="nav-link active">Preços</a></li>
-                    <li><a href="contact.html" class="nav-link">Contato</a></li>
-                </ul>
-            </div>
-
-            <div class="nav-actions">
-                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
-                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <circle cx="12" cy="12" r="5" />
-                        <path
-                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                <a href="../index.html">
+                    <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
+                            fill="url(#gradient-nav)" />
+                        <defs>
+                            <linearGradient id="gradient-nav" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#6366f1" />
+                                <stop offset="100%" stop-color="#8b5cf6" />
+                            </linearGradient>
+                        </defs>
                     </svg>
-                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                        stroke-width="2">
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-                    </svg>
-                </button>
-                <button class="btn btn-outline">Entrar</button>
-                <button class="btn btn-primary">Começar</button>
+                    <span class="brand-text">NextGen</span>
+                </a>
             </div>
 
-            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <div class="auth-nav">
+                <span class="auth-text">Não tem uma conta?</span>
+                <a href="register.html" class="btn btn-outline">Criar Conta</a>
+            </div>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="page-hero">
-            <div class="container">
-                <div class="page-hero-content">
-                    <h1 class="page-title">Escolha Seu <span class="gradient-text">Plano</span></h1>
-                    <p class="page-description">
-                        Planos flexíveis para cada momento da sua jornada profissional.
-                        Cancele quando quiser, sem taxas adicionais.
-                    </p>
+    <main class="auth-main">
+        <div class="auth-container">
+            <div class="auth-grid">
+                <!-- Login Form -->
+                <div class="auth-form-section">
+                    <div class="auth-form-container">
+                        <div class="auth-header-content">
+                            <h1>Bem-vindo de volta!</h1>
+                            <p>Faça login para continuar sua jornada de aprendizado</p>
+                        </div>
 
-                    <!-- Billing Toggle -->
-                    <div class="billing-toggle">
-                        <span class="billing-label">Mensal</span>
-                        <button class="toggle-switch" id="billing-toggle">
-                            <span class="toggle-slider"></span>
-                        </button>
-                        <span class="billing-label">
-                            Anual
-                            <span class="discount-badge">-20%</span>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </section>
+                        <!-- Social Login Options -->
+                        <div class="social-login">
+                            <button class="social-btn google-btn" id="google-login">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="#4285F4"
+                                        d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" />
+                                    <path fill="#34A853"
+                                        d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" />
+                                    <path fill="#FBBC05"
+                                        d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" />
+                                    <path fill="#EA4335"
+                                        d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" />
+                                </svg>
+                                Continuar com Google
+                            </button>
 
-        <!-- Pricing Cards -->
-        <section class="pricing-section">
-            <div class="container">
-                <div class="pricing-grid">
-                    <!-- Starter Plan -->
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3 class="plan-name">Starter</h3>
-                            <p class="plan-description">Perfeito para quem está começando</p>
-                            <div class="plan-price">
-                                <span class="price-monthly">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">97</span>
-                                    <span class="period">/mês</span>
-                                </span>
-                                <span class="price-yearly hidden">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">77</span>
-                                    <span class="period">/mês</span>
-                                </span>
+                            <button class="social-btn microsoft-btn" id="microsoft-login">
+                                <svg width="20" height="20" viewBox="0 0 24 24">
+                                    <path fill="#f25022" d="M1 1h10v10H1z" />
+                                    <path fill="#00a4ef" d="M13 1h10v10H13z" />
+                                    <path fill="#7fba00" d="M1 13h10v10H1z" />
+                                    <path fill="#ffb900" d="M13 13h10v10H13z" />
+                                </svg>
+                                Continuar com Microsoft
+                            </button>
+
+                            <button class="social-btn github-btn" id="github-login">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                Continuar com GitHub
+                            </button>
+
+                            <button class="social-btn linkedin-btn" id="linkedin-login">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                                </svg>
+                                Continuar com LinkedIn
+                            </button>
+                        </div>
+
+                        <!-- Divider -->
+                        <div class="login-divider">
+                            <span>ou continue com email</span>
+                        </div>
+
+                        <!-- Email/Password Form -->
+                        <form class="auth-form" id="login-form">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required
+                                    autocomplete="email">
                             </div>
-                            <p class="price-note">
-                                <span class="yearly-note hidden">Cobrado anualmente (R$ 924)</span>
-                            </p>
-                        </div>
 
-                        <div class="pricing-features">
-                            <ul class="features-list">
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Acesso a 5 cursos básicos
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Certificados de conclusão
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Comunidade de alunos
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Suporte por email
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Acesso mobile
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="pricing-footer">
-                            <button class="btn btn-outline btn-large">Começar Gratuitamente</button>
-                            <p class="trial-note">7 dias grátis</p>
-                        </div>
-                    </div>
-
-                    <!-- Professional Plan -->
-                    <div class="pricing-card featured">
-                        <div class="popular-badge">Mais Popular</div>
-                        <div class="pricing-header">
-                            <h3 class="plan-name">Professional</h3>
-                            <p class="plan-description">Para profissionais em crescimento</p>
-                            <div class="plan-price">
-                                <span class="price-monthly">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">197</span>
-                                    <span class="period">/mês</span>
-                                </span>
-                                <span class="price-yearly hidden">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">157</span>
-                                    <span class="period">/mês</span>
-                                </span>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <div class="password-input">
+                                    <input type="password" id="password" name="password" placeholder="••••••••" required
+                                        autocomplete="current-password">
+                                    <button type="button" class="password-toggle" aria-label="Mostrar senha">
+                                        <svg class="eye-open" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                            <circle cx="12" cy="12" r="3" />
+                                        </svg>
+                                        <svg class="eye-closed hidden" width="20" height="20" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2">
+                                            <path
+                                                d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24" />
+                                            <line x1="1" y1="1" x2="23" y2="23" />
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
-                            <p class="price-note">
-                                <span class="yearly-note hidden">Cobrado anualmente (R$ 1.884)</span>
-                            </p>
-                        </div>
 
-                        <div class="pricing-features">
-                            <ul class="features-list">
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Acesso a todos os cursos
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Projetos práticos incluídos
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    2 sessões de mentoria/mês
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Trilhas personalizadas
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Suporte prioritário
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Acesso a webinars exclusivos
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="pricing-footer">
-                            <button class="btn btn-primary btn-large">Começar Agora</button>
-                            <p class="trial-note">14 dias grátis</p>
-                        </div>
-                    </div>
-
-                    <!-- Enterprise Plan -->
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3 class="plan-name">Enterprise</h3>
-                            <p class="plan-description">Para empresas e equipes</p>
-                            <div class="plan-price">
-                                <span class="price-monthly">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">497</span>
-                                    <span class="period">/mês</span>
-                                </span>
-                                <span class="price-yearly hidden">
-                                    <span class="currency">R$</span>
-                                    <span class="amount">397</span>
-                                    <span class="period">/mês</span>
-                                </span>
+                            <div class="form-options">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <span class="checkmark"></span>
+                                    <span class="checkbox-text">Lembrar de mim</span>
+                                </label>
+                                <a href="#forgot-password" class="forgot-link">Esqueceu a senha?</a>
                             </div>
-                            <p class="price-note">
-                                <span class="yearly-note hidden">Cobrado anualmente (R$ 4.764)</span>
-                            </p>
-                        </div>
 
-                        <div class="pricing-features">
-                            <ul class="features-list">
-                                <li class="feature-item">
+                            <button type="submit" class="btn btn-primary btn-large btn-full">
+                                <span class="btn-text">Entrar</span>
+                                <span class="btn-loading hidden">
                                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                         stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
+                                        <path d="M21 12a9 9 0 11-6.219-8.56" />
                                     </svg>
-                                    Até 50 usuários
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Conteúdo exclusivo B2B
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Relatórios de progresso
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Mentoria ilimitada
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Suporte 24/7
-                                </li>
-                                <li class="feature-item">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                        stroke-width="2">
-                                        <polyline points="20,6 9,17 4,12" />
-                                    </svg>
-                                    Integração com LMS
-                                </li>
-                            </ul>
-                        </div>
+                                    Entrando...
+                                </span>
+                            </button>
 
-                        <div class="pricing-footer">
-                            <button class="btn btn-outline btn-large">Falar com Vendas</button>
-                            <p class="trial-note">Demo personalizada</p>
+                            <div class="form-success hidden" id="form-success">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+                                    <polyline points="22,4 12,14.01 9,11.01" />
+                                </svg>
+                                <p>Login realizado com sucesso! Redirecionando...</p>
+                            </div>
+
+                            <div class="form-error hidden" id="form-error">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="15" y1="9" x2="9" y2="15" />
+                                    <line x1="9" y1="9" x2="15" y2="15" />
+                                </svg>
+                                <p>Email ou senha incorretos. Tente novamente.</p>
+                            </div>
+                        </form>
+
+                        <!-- Footer Links -->
+                        <div class="auth-footer">
+                            <p>Novo na NextGen? <a href="register.html">Crie sua conta gratuitamente</a></p>
+                            <div class="auth-footer-links">
+                                <a href="#terms">Termos de Uso</a>
+                                <span>•</span>
+                                <a href="#privacy">Política de Privacidade</a>
+                                <span>•</span>
+                                <a href="#help">Ajuda</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- FAQ Section -->
-        <section class="faq-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Perguntas Frequentes</h2>
-                    <p class="section-description">
-                        Esclarecemos as principais dúvidas sobre nossos planos
-                    </p>
-                </div>
+                <!-- Side Visual -->
+                <div class="auth-visual-section">
+                    <div class="visual-content">
+                        <div class="visual-background">
+                            <div class="floating-shapes">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2"></div>
+                                <div class="shape shape-3"></div>
+                                <div class="shape shape-4"></div>
+                            </div>
+                        </div>
 
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="1">
-                            <span>Posso cancelar minha assinatura a qualquer momento?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-1">
-                            <p>Sim! Você pode cancelar sua assinatura a qualquer momento através do seu painel de
-                                usuário. Não há taxas de cancelamento e você continuará tendo acesso até o final do
-                                período pago.</p>
+                        <div class="visual-text">
+                            <h2>Transforme sua carreira com tecnologias emergentes</h2>
+                            <p>Junte-se a mais de 10.000 profissionais que já evoluíram suas carreiras com a NextGen
+                                Learning Hub.</p>
+
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <p>"A NextGen transformou completamente minha carreira. Em 6 meses consegui minha
+                                        promoção para Tech Lead!"</p>
+                                </div>
+                                <div class="testimonial-author">
+                                    <div class="author-avatar">
+                                        <img src="/nextgen/assets/images/testimonial-avatar.jpg" alt="Ana Silva"
+                                            onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                                        <div class="avatar-placeholder">AS</div>
+                                    </div>
+                                    <div class="author-info">
+                                        <div class="author-name">Ana Silva</div>
+                                        <div class="author-role">Tech Lead • Google</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="stats">
+                                <div class="stat">
+                                    <div class="stat-number">50+</div>
+                                    <div class="stat-label">Cursos</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">10k+</div>
+                                    <div class="stat-label">Alunos</div>
+                                </div>
+                                <div class="stat">
+                                    <div class="stat-number">98%</div>
+                                    <div class="stat-label">Satisfação</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="2">
-                            <span>Qual a diferença entre os planos?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-2">
-                            <p>O plano Starter oferece acesso básico a cursos introdutórios. O Professional inclui todos
-                                os cursos, projetos práticos e mentoria. O Enterprise é voltado para empresas com
-                                recursos corporativos avançados.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="3">
-                            <span>Os certificados são reconhecidos no mercado?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-3">
-                            <p>Nossos certificados são validados por empresas parceiras e reconhecidos por profissionais
-                                de RH em grandes corporações. Eles comprovam suas habilidades práticas adquiridas.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="4">
-                            <span>Como funciona o período gratuito?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-4">
-                            <p>Durante o período gratuito, você tem acesso completo ao plano escolhido. Se não ficar
-                                satisfeito, pode cancelar antes do fim do período e não será cobrado nada.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="5">
-                            <span>Posso trocar de plano depois?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-5">
-                            <p>Sim! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. As alterações
-                                entram em vigor no próximo ciclo de cobrança.</p>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question" data-faq="6">
-                            <span>Há desconto para estudantes?</span>
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polyline points="6,9 12,15 18,9" />
-                            </svg>
-                        </button>
-                        <div class="faq-answer" id="faq-6">
-                            <p>Oferecemos 50% de desconto para estudantes universitários com comprovante de matrícula
-                                ativa. Entre em contato conosco para mais informações.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Money Back Guarantee -->
-        <section class="guarantee-section">
-            <div class="container">
-                <div class="guarantee-content">
-                    <div class="guarantee-icon">
-                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="1.5">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                            <path d="M9 12l2 2 4-4" />
-                        </svg>
-                    </div>
-                    <h2>Garantia de 30 Dias</h2>
-                    <p>
-                        Se você não ficar completamente satisfeito com nossos cursos em até 30 dias,
-                        devolvemos 100% do seu dinheiro. Sem perguntas, sem complicações.
-                    </p>
-                    <button class="btn btn-primary btn-large">Começar Sem Riscos</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="nav-brand">
-                        <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
-                                fill="url(#gradient-footer)" />
-                            <defs>
-                                <linearGradient id="gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
-                                    <stop offset="0%" stop-color="#6366f1" />
-                                    <stop offset="100%" stop-color="#8b5cf6" />
-                                </linearGradient>
-                            </defs>
-                        </svg>
-                        <span class="brand-text">NextGen</span>
-                    </div>
-                    <p class="footer-description">
-                        Transformando carreiras através da educação em tecnologias emergentes.
-                    </p>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Plataforma</h4>
-                        <ul>
-                            <li><a href="courses.html">Cursos</a></li>
-                            <li><a href="#mentorship">Mentoria</a></li>
-                            <li><a href="#certificates">Certificados</a></li>
-                            <li><a href="#community">Comunidade</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Recursos</h4>
-                        <ul>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#guides">Guias</a></li>
-                            <li><a href="#webinars">Webinars</a></li>
-                            <li><a href="#newsletter">Newsletter</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="footer-column">
-                        <h4>Suporte</h4>
-                        <ul>
-                            <li><a href="#help">Central de Ajuda</a></li>
-                            <li><a href="contact.html">Contato</a></li>
-                            <li><a href="#status">Status</a></li>
-                            <li><a href="#updates">Atualizações</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>&copy; 2025 NextGen Learning Hub. Todos os direitos reservados.</p>
-                <div class="footer-social">
-                    <a href="#" aria-label="Twitter">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="LinkedIn">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
-                            <circle cx="4" cy="4" r="2" />
-                        </svg>
-                    </a>
-                    <a href="#" aria-label="GitHub">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                        </svg>
-                    </a>
                 </div>
             </div>
         </div>
-    </footer>
+    </main>
 
-    <script src="../scripts/main.js"></script>
+    <!-- Forgot Password Modal -->
+    <div class="modal-overlay hidden" id="forgot-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Recuperar Senha</h3>
+                <button class="modal-close" aria-label="Fechar">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Digite seu email e enviaremos um link para redefinir sua senha.</p>
+                <form id="forgot-form">
+                    <div class="form-group">
+                        <label for="forgot-email">Email</label>
+                        <input type="email" id="forgot-email" name="email" placeholder="seu@email.com" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large btn-full">
+                        Enviar Link de Recuperação
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="/nextgen/assets/script/script.js"></script>
 </body>
 
 </html>
