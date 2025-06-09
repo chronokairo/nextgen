@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conheça os planos da NextGen Learning Hub - Escolha o melhor para sua evolução profissional">
+    <title>Preços - NextGen Learning Hub</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav-brand">
+                <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
+                        fill="url(#gradient-nav)" />
+                    <defs>
+                        <linearGradient id="gradient-nav" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6366f1" />
+                            <stop offset="100%" stop-color="#8b5cf6" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-text">NextGen</span>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="../index.html" class="nav-link">Início</a></li>
+                    <li><a href="courses.html" class="nav-link">Cursos</a></li>
+                    <li><a href="about.html" class="nav-link">Sobre</a></li>
+                    <li><a href="pricing.html" class="nav-link active">Preços</a></li>
+                    <li><a href="contact.html" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Alternar tema">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <button class="btn btn-outline">Entrar</button>
+                <button class="btn btn-primary">Começar</button>
+            </div>
+
+            <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="page-hero">
+            <div class="container">
+                <div class="page-hero-content">
+                    <h1 class="page-title">Escolha Seu <span class="gradient-text">Plano</span></h1>
+                    <p class="page-description">
+                        Planos flexíveis para cada momento da sua jornada profissional.
+                        Cancele quando quiser, sem taxas adicionais.
+                    </p>
+
+                    <!-- Billing Toggle -->
+                    <div class="billing-toggle">
+                        <span class="billing-label">Mensal</span>
+                        <button class="toggle-switch" id="billing-toggle">
+                            <span class="toggle-slider"></span>
+                        </button>
+                        <span class="billing-label">
+                            Anual
+                            <span class="discount-badge">-20%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+            <div class="container">
+                <div class="pricing-grid">
+                    <!-- Starter Plan -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Starter</h3>
+                            <p class="plan-description">Perfeito para quem está começando</p>
+                            <div class="plan-price">
+                                <span class="price-monthly">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">97</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                                <span class="price-yearly hidden">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">77</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                            </div>
+                            <p class="price-note">
+                                <span class="yearly-note hidden">Cobrado anualmente (R$ 924)</span>
+                            </p>
+                        </div>
+
+                        <div class="pricing-features">
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Acesso a 5 cursos básicos
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Certificados de conclusão
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Comunidade de alunos
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Suporte por email
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Acesso mobile
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-footer">
+                            <button class="btn btn-outline btn-large">Começar Gratuitamente</button>
+                            <p class="trial-note">7 dias grátis</p>
+                        </div>
+                    </div>
+
+                    <!-- Professional Plan -->
+                    <div class="pricing-card featured">
+                        <div class="popular-badge">Mais Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Professional</h3>
+                            <p class="plan-description">Para profissionais em crescimento</p>
+                            <div class="plan-price">
+                                <span class="price-monthly">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">197</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                                <span class="price-yearly hidden">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">157</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                            </div>
+                            <p class="price-note">
+                                <span class="yearly-note hidden">Cobrado anualmente (R$ 1.884)</span>
+                            </p>
+                        </div>
+
+                        <div class="pricing-features">
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Acesso a todos os cursos
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Projetos práticos incluídos
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    2 sessões de mentoria/mês
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Trilhas personalizadas
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Suporte prioritário
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Acesso a webinars exclusivos
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-footer">
+                            <button class="btn btn-primary btn-large">Começar Agora</button>
+                            <p class="trial-note">14 dias grátis</p>
+                        </div>
+                    </div>
+
+                    <!-- Enterprise Plan -->
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="plan-name">Enterprise</h3>
+                            <p class="plan-description">Para empresas e equipes</p>
+                            <div class="plan-price">
+                                <span class="price-monthly">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">497</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                                <span class="price-yearly hidden">
+                                    <span class="currency">R$</span>
+                                    <span class="amount">397</span>
+                                    <span class="period">/mês</span>
+                                </span>
+                            </div>
+                            <p class="price-note">
+                                <span class="yearly-note hidden">Cobrado anualmente (R$ 4.764)</span>
+                            </p>
+                        </div>
+
+                        <div class="pricing-features">
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Até 50 usuários
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Conteúdo exclusivo B2B
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Relatórios de progresso
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Mentoria ilimitada
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Suporte 24/7
+                                </li>
+                                <li class="feature-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="20,6 9,17 4,12" />
+                                    </svg>
+                                    Integração com LMS
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pricing-footer">
+                            <button class="btn btn-outline btn-large">Falar com Vendas</button>
+                            <p class="trial-note">Demo personalizada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Perguntas Frequentes</h2>
+                    <p class="section-description">
+                        Esclarecemos as principais dúvidas sobre nossos planos
+                    </p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="1">
+                            <span>Posso cancelar minha assinatura a qualquer momento?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-1">
+                            <p>Sim! Você pode cancelar sua assinatura a qualquer momento através do seu painel de
+                                usuário. Não há taxas de cancelamento e você continuará tendo acesso até o final do
+                                período pago.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="2">
+                            <span>Qual a diferença entre os planos?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-2">
+                            <p>O plano Starter oferece acesso básico a cursos introdutórios. O Professional inclui todos
+                                os cursos, projetos práticos e mentoria. O Enterprise é voltado para empresas com
+                                recursos corporativos avançados.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="3">
+                            <span>Os certificados são reconhecidos no mercado?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-3">
+                            <p>Nossos certificados são validados por empresas parceiras e reconhecidos por profissionais
+                                de RH em grandes corporações. Eles comprovam suas habilidades práticas adquiridas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="4">
+                            <span>Como funciona o período gratuito?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-4">
+                            <p>Durante o período gratuito, você tem acesso completo ao plano escolhido. Se não ficar
+                                satisfeito, pode cancelar antes do fim do período e não será cobrado nada.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="5">
+                            <span>Posso trocar de plano depois?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-5">
+                            <p>Sim! Você pode fazer upgrade ou downgrade do seu plano a qualquer momento. As alterações
+                                entram em vigor no próximo ciclo de cobrança.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question" data-faq="6">
+                            <span>Há desconto para estudantes?</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <polyline points="6,9 12,15 18,9" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer" id="faq-6">
+                            <p>Oferecemos 50% de desconto para estudantes universitários com comprovante de matrícula
+                                ativa. Entre em contato conosco para mais informações.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Money Back Guarantee -->
+        <section class="guarantee-section">
+            <div class="container">
+                <div class="guarantee-content">
+                    <div class="guarantee-icon">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="1.5">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <path d="M9 12l2 2 4-4" />
+                        </svg>
+                    </div>
+                    <h2>Garantia de 30 Dias</h2>
+                    <p>
+                        Se você não ficar completamente satisfeito com nossos cursos em até 30 dias,
+                        devolvemos 100% do seu dinheiro. Sem perguntas, sem complicações.
+                    </p>
+                    <button class="btn btn-primary btn-large">Começar Sem Riscos</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-brand">
+                        <svg width="32" height="32" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z"
+                                fill="url(#gradient-footer)" />
+                            <defs>
+                                <linearGradient id="gradient-footer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#6366f1" />
+                                    <stop offset="100%" stop-color="#8b5cf6" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="brand-text">NextGen</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando carreiras através da educação em tecnologias emergentes.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Plataforma</h4>
+                        <ul>
+                            <li><a href="courses.html">Cursos</a></li>
+                            <li><a href="#mentorship">Mentoria</a></li>
+                            <li><a href="#certificates">Certificados</a></li>
+                            <li><a href="#community">Comunidade</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Recursos</h4>
+                        <ul>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#guides">Guias</a></li>
+                            <li><a href="#webinars">Webinars</a></li>
+                            <li><a href="#newsletter">Newsletter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Suporte</h4>
+                        <ul>
+                            <li><a href="#help">Central de Ajuda</a></li>
+                            <li><a href="contact.html">Contato</a></li>
+                            <li><a href="#status">Status</a></li>
+                            <li><a href="#updates">Atualizações</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 NextGen Learning Hub. Todos os direitos reservados.</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="Twitter">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
+                            <circle cx="4" cy="4" r="2" />
+                        </svg>
+                    </a>
+                    <a href="#" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../scripts/main.js"></script>
+</body>
+
+</html>
