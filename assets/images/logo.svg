@@ -1,0 +1,71 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hexagon Base -->
+  <path d="M20 30L30 15L40 15L50 30L40 45L30 45L20 30Z" fill="url(#hexBg)" opacity="0.2"/>
+  <path d="M22 30L30 18L38 18L46 30L38 42L30 42L22 30Z" fill="url(#hexMain)"/>
+  
+  <!-- Inner Hexagon -->
+  <path d="M26 30L30 24L34 24L38 30L34 36L30 36L26 30Z" fill="url(#hexInner)" opacity="0.9"/>
+  
+  <!-- Center Element -->
+  <polygon points="30,26 32,28 30,30 28,28" fill="white" opacity="0.95"/>
+  <circle cx="30" cy="28" r="1" fill="url(#centerDot)"/>
+  
+  <!-- Tech Elements -->
+  <rect x="24" y="20" width="2" height="6" fill="url(#techAccent)" opacity="0.7" rx="1"/>
+  <rect x="44" y="20" width="2" height="6" fill="url(#techAccent)" opacity="0.7" rx="1"/>
+  <rect x="24" y="34" width="2" height="6" fill="url(#techAccent)" opacity="0.7" rx="1"/>
+  <rect x="44" y="34" width="2" height="6" fill="url(#techAccent)" opacity="0.7" rx="1"/>
+  
+  <!-- Connection Lines -->
+  <line x1="30" y1="15" x2="30" y2="10" stroke="url(#connectionGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="30" y1="45" x2="30" y2="50" stroke="url(#connectionGradient)" stroke-width="2" opacity="0.6"/>
+  <line x1="50" y1="30" x2="55" y2="30" stroke="url(#connectionGradient)" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Text -->
+  <text x="70" y="24" font-family="Inter, sans-serif" font-weight="900" font-size="18" fill="url(#logoText)">NextGen</text>
+  <text x="70" y="38" font-family="Inter, sans-serif" font-weight="600" font-size="9" fill="#64748b" letter-spacing="0.5px">LEARNING HUB</text>
+  
+  <!-- Version Indicator -->
+  <rect x="170" y="12" width="25" height="12" rx="6" fill="url(#versionBg)" opacity="0.1"/>
+  <text x="175" y="20" font-family="Inter, sans-serif" font-weight="700" font-size="7" fill="url(#versionText)">v2.0</text>
+  
+  <defs>
+    <linearGradient id="hexBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="hexMain" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="hexInner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="centerDot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="techAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="connectionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="logoText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <linearGradient id="versionBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <linearGradient id="versionText" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+</svg>
