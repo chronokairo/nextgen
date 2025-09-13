@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../assets//css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="icon" type="image/svg+xml" href="../assets/icons/favicon.svg">
 </head>
 
@@ -111,6 +111,16 @@
                     <button class="filter-tab" data-filter="development">Desenvolvimento</button>
                     <button class="filter-tab" data-filter="marketing">Marketing Digital</button>
                 </div>
+
+                <div class="level-filters">
+                    <h3>Nível de Dificuldade</h3>
+                    <div class="level-tabs">
+                        <button class="level-tab active" data-level="all">Todos os Níveis</button>
+                        <button class="level-tab" data-level="beginner">Iniciante</button>
+                        <button class="level-tab" data-level="intermediate">Intermediário</button>
+                        <button class="level-tab" data-level="advanced">Avançado</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -118,90 +128,10 @@
         <section class="all-courses">
             <div class="container">
                 <div class="courses-grid" id="courses-grid">
-                    <!-- AI Courses -->
-                    <div class="course-card" data-category="ai" data-level="intermediate">
+                    <!-- ERICK - Marketing Courses -->
+                    <div class="course-card" data-category="marketing" data-level="beginner">
                         <div class="course-image">
-                            <div class="course-badge popular">Mais Popular</div>
-                            <div class="course-icon">🤖</div>
-                            <div class="course-overlay">
-                                <button class="btn btn-primary">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <div class="course-meta">
-                                <span class="course-level intermediate">Intermediário</span>
-                                <span class="course-duration">8 semanas</span>
-                                <span class="course-rating">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                                    </svg>
-                                    4.9 (350)
-                                </span>
-                            </div>
-                            <h3 class="course-title">Inteligência Artificial Aplicada</h3>
-                            <p class="course-description">
-                                Domine Machine Learning, Deep Learning e IA Generativa com projetos práticos e cases
-                                reais da indústria.
-                            </p>
-                            <div class="course-highlights">
-                                <span class="highlight">✓ 12 Projetos Práticos</span>
-                                <span class="highlight">✓ Mentoria Incluída</span>
-                                <span class="highlight">✓ Certificado Reconhecido</span>
-                            </div>
-                            <div class="course-footer">
-                                <div class="course-price">
-                                    <span class="price-current">R$ 297</span>
-                                    <span class="price-old">R$ 497</span>
-                                </div>
-                                <button class="btn btn-primary">Inscrever-se</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Blockchain Course -->
-                    <div class="course-card" data-category="blockchain" data-level="advanced">
-                        <div class="course-image">
-                            <div class="course-icon">⛓️</div>
-                            <div class="course-overlay">
-                                <button class="btn btn-primary">Ver Detalhes</button>
-                            </div>
-                        </div>
-                        <div class="course-content">
-                            <div class="course-meta">
-                                <span class="course-level advanced">Avançado</span>
-                                <span class="course-duration">6 semanas</span>
-                                <span class="course-rating">
-                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
-                                        <path
-                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
-                                    </svg>
-                                    4.8 (210)
-                                </span>
-                            </div>
-                            <h3 class="course-title">Blockchain & Web3 Development</h3>
-                            <p class="course-description">
-                                Desenvolva aplicações descentralizadas, smart contracts e explore o futuro das finanças
-                                digitais.
-                            </p>
-                            <div class="course-highlights">
-                                <span class="highlight">✓ Smart Contracts</span>
-                                <span class="highlight">✓ DeFi Projects</span>
-                                <span class="highlight">✓ NFT Development</span>
-                            </div>
-                            <div class="course-footer">
-                                <div class="course-price">
-                                    <span class="price-current">R$ 397</span>
-                                </div>
-                                <button class="btn btn-primary">Inscrever-se</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Design Course -->
-                    <div class="course-card" data-category="design" data-level="beginner">
-                        <div class="course-image">
-                            <div class="course-icon">🎨</div>
+                            <div class="course-icon">📊</div>
                             <div class="course-overlay">
                                 <button class="btn btn-primary">Ver Detalhes</button>
                             </div>
@@ -215,18 +145,19 @@
                                         <path
                                             d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
-                                    4.9 (420)
+                                    4.8 (150)
                                 </span>
                             </div>
-                            <h3 class="course-title">UI/UX Design Avançado</h3>
+                            <h3 class="course-title">Marketing Pessoal Digital: GitHub e LinkedIn para Profissionais
+                            </h3>
                             <p class="course-description">
-                                Crie interfaces memoráveis com Design Systems, Prototipagem e metodologias de Design
-                                Thinking.
+                                Aprenda a construir uma presença digital profissional no GitHub e LinkedIn, otimizando
+                                seu perfil para oportunidades de carreira.
                             </p>
                             <div class="course-highlights">
-                                <span class="highlight">✓ Design Systems</span>
-                                <span class="highlight">✓ Figma Avançado</span>
-                                <span class="highlight">✓ Portfolio Completo</span>
+                                <span class="highlight">✓ Perfil Otimizado</span>
+                                <span class="highlight">✓ Networking Digital</span>
+                                <span class="highlight">✓ Branding Pessoal</span>
                             </div>
                             <div class="course-footer">
                                 <div class="course-price">
@@ -237,7 +168,7 @@
                         </div>
                     </div>
 
-                    <!-- Development Course -->
+                    <!-- RIAD - Development Courses -->
                     <div class="course-card" data-category="development" data-level="intermediate">
                         <div class="course-image">
                             <div class="course-icon">💻</div>
@@ -248,24 +179,63 @@
                         <div class="course-content">
                             <div class="course-meta">
                                 <span class="course-level intermediate">Intermediário</span>
-                                <span class="course-duration">10 semanas</span>
+                                <span class="course-duration">6 semanas</span>
                                 <span class="course-rating">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                         <path
                                             d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
-                                    4.7 (180)
+                                    4.9 (200)
                                 </span>
                             </div>
-                            <h3 class="course-title">Full Stack React & Node.js</h3>
+                            <h3 class="course-title">Git e GitHub: Controle de Versão para Desenvolvedores</h3>
                             <p class="course-description">
-                                Desenvolva aplicações completas do zero ao deploy com as tecnologias mais demandadas do
-                                mercado.
+                                Domine o controle de versão com Git e GitHub, aprendendo workflows colaborativos e
+                                melhores práticas para desenvolvimento de software.
                             </p>
                             <div class="course-highlights">
-                                <span class="highlight">✓ 8 Projetos Completos</span>
-                                <span class="highlight">✓ Deploy na AWS</span>
-                                <span class="highlight">✓ APIs Modernas</span>
+                                <span class="highlight">✓ Git Avançado</span>
+                                <span class="highlight">✓ Colaboração</span>
+                                <span class="highlight">✓ Workflows Profissionais</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 247</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="development" data-level="advanced">
+                        <div class="course-image">
+                            <div class="course-icon">🎮</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level advanced">Avançado</span>
+                                <span class="course-duration">8 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.7 (120)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Compilação Nativa: Desenvolvimento de Jogos em Python
+                                Multiplataforma</h3>
+                            <p class="course-description">
+                                Aprenda a criar jogos multiplataforma usando Python com compilação nativa, otimizando
+                                performance e distribuição.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Jogos Multiplataforma</span>
+                                <span class="highlight">✓ Compilação Nativa</span>
+                                <span class="highlight">✓ Otimização de Performance</span>
                             </div>
                             <div class="course-footer">
                                 <div class="course-price">
@@ -276,10 +246,47 @@
                         </div>
                     </div>
 
-                    <!-- Marketing Course -->
-                    <div class="course-card" data-category="marketing" data-level="beginner">
+                    <div class="course-card" data-category="development" data-level="intermediate">
                         <div class="course-image">
-                            <div class="course-icon">📊</div>
+                            <div class="course-icon">⚙️</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediário</span>
+                                <span class="course-duration">5 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.8 (180)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Automação de Processos com N8N</h3>
+                            <p class="course-description">
+                                Automatize workflows e processos empresariais usando N8N, integrando APIs e criando
+                                automações eficientes.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Workflows Automatizados</span>
+                                <span class="highlight">✓ Integração de APIs</span>
+                                <span class="highlight">✓ Automação Empresarial</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 297</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="development" data-level="beginner">
+                        <div class="course-image">
+                            <div class="course-icon">🌐</div>
                             <div class="course-overlay">
                                 <button class="btn btn-primary">Ver Detalhes</button>
                             </div>
@@ -293,62 +300,334 @@
                                         <path
                                             d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
-                                    4.8 (290)
+                                    4.9 (220)
                                 </span>
                             </div>
-                            <h3 class="course-title">Marketing Digital & Growth</h3>
+                            <h3 class="course-title">Fundamentos de Infraestrutura de Redes: TCP/IP, DNS, Proxy e
+                                Firewall</h3>
                             <p class="course-description">
-                                Domine estratégias de growth hacking, analytics e automação para escalar negócios
-                                digitais.
+                                Aprenda os fundamentos de redes de computadores, incluindo protocolos TCP/IP, DNS,
+                                configuração de proxy e firewall.
                             </p>
                             <div class="course-highlights">
-                                <span class="highlight">✓ Growth Strategies</span>
-                                <span class="highlight">✓ Analytics Avançado</span>
-                                <span class="highlight">✓ Automação</span>
+                                <span class="highlight">✓ Protocolos TCP/IP</span>
+                                <span class="highlight">✓ Configuração DNS</span>
+                                <span class="highlight">✓ Segurança de Rede</span>
                             </div>
                             <div class="course-footer">
                                 <div class="course-price">
-                                    <span class="price-current">R$ 247</span>
+                                    <span class="price-current">R$ 227</span>
                                 </div>
                                 <button class="btn btn-primary">Inscrever-se</button>
                             </div>
                         </div>
                     </div>
 
-                    <!-- AI Data Science -->
-                    <div class="course-card" data-category="ai" data-level="advanced">
+                    <!-- VICTOR - Design and Technology Courses -->
+                    <div class="course-card" data-category="design" data-level="beginner">
                         <div class="course-image">
-                            <div class="course-badge new">Novo</div>
-                            <div class="course-icon">📈</div>
+                            <div class="course-icon">🎨</div>
                             <div class="course-overlay">
                                 <button class="btn btn-primary">Ver Detalhes</button>
                             </div>
                         </div>
                         <div class="course-content">
                             <div class="course-meta">
-                                <span class="course-level advanced">Avançado</span>
-                                <span class="course-duration">12 semanas</span>
+                                <span class="course-level beginner">Iniciante</span>
+                                <span class="course-duration">5 semanas</span>
                                 <span class="course-rating">
                                     <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                                         <path
                                             d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
                                     </svg>
-                                    4.9 (125)
+                                    4.8 (190)
                                 </span>
                             </div>
-                            <h3 class="course-title">Data Science & AI Analytics</h3>
+                            <h3 class="course-title">Design Gráfico com Canva: Do Básico ao Profissional</h3>
                             <p class="course-description">
-                                Transforme dados em insights poderosos usando Python, Machine Learning e visualização
-                                avançada.
+                                Domine o Canva para criar designs gráficos profissionais, desde posts para redes sociais
+                                até materiais de marketing completos.
                             </p>
                             <div class="course-highlights">
-                                <span class="highlight">✓ Python Avançado</span>
-                                <span class="highlight">✓ ML Algorithms</span>
-                                <span class="highlight">✓ Big Data Tools</span>
+                                <span class="highlight">✓ Design com Canva</span>
+                                <span class="highlight">✓ Materiais de Marketing</span>
+                                <span class="highlight">✓ Portfolio Digital</span>
                             </div>
                             <div class="course-footer">
                                 <div class="course-price">
-                                    <span class="price-current">R$ 447</span>
+                                    <span class="price-current">R$ 177</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="ai" data-level="intermediate">
+                        <div class="course-image">
+                            <div class="course-icon">🤖</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediário</span>
+                                <span class="course-duration">7 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.9 (250)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Inteligência Artificial para Desenvolvedores: Copilot e Ferramentas
+                                do Mercado</h3>
+                            <p class="course-description">
+                                Explore ferramentas de IA para desenvolvedores, incluindo GitHub Copilot, e aprenda a
+                                integrar IA em seus projetos de desenvolvimento.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ GitHub Copilot</span>
+                                <span class="highlight">✓ Ferramentas de IA</span>
+                                <span class="highlight">✓ Integração em Projetos</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 327</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="development" data-level="beginner">
+                        <div class="course-image">
+                            <div class="course-icon">🔌</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level beginner">Iniciante</span>
+                                <span class="course-duration">6 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.7 (160)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Redes de Computadores: Topologia e Comandos de Terminal</h3>
+                            <p class="course-description">
+                                Aprenda topologia de redes, configuração de redes locais e comandos essenciais de
+                                terminal para administração de sistemas.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Topologia de Redes</span>
+                                <span class="highlight">✓ Comandos de Terminal</span>
+                                <span class="highlight">✓ Administração de Redes</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 217</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- LUAN - Mobile Development and Programming Courses -->
+                    <div class="course-card" data-category="development" data-level="intermediate">
+                        <div class="course-image">
+                            <div class="course-icon">📱</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediário</span>
+                                <span class="course-duration">10 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.8 (300)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Desenvolvimento Mobile com Flutter</h3>
+                            <p class="course-description">
+                                Crie aplicativos móveis multiplataforma usando Flutter e Dart, desenvolvendo apps
+                                nativos para iOS e Android.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Apps Multiplataforma</span>
+                                <span class="highlight">✓ Flutter & Dart</span>
+                                <span class="highlight">✓ UI/UX Mobile</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 397</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="development" data-level="beginner">
+                        <div class="course-image">
+                            <div class="course-icon">🇺🇸</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level beginner">Iniciante</span>
+                                <span class="course-duration">8 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.9 (280)
+                                </span>
+                            </div>
+                            <h3 class="course-title">English for Programming: Inglês Técnico para Desenvolvedores</h3>
+                            <p class="course-description">
+                                Aprenda inglês técnico específico para programação, incluindo terminologia, documentação
+                                e comunicação profissional em TI.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Inglês Técnico</span>
+                                <span class="highlight">✓ Terminologia de TI</span>
+                                <span class="highlight">✓ Comunicação Profissional</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 257</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="course-card" data-category="development" data-level="intermediate">
+                        <div class="course-image">
+                            <div class="course-icon">📊</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level intermediate">Intermediário</span>
+                                <span class="course-duration">6 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.7 (140)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Automação Office: Programação VBA para Produtividade</h3>
+                            <p class="course-description">
+                                Automatize tarefas no Microsoft Office usando VBA, criando macros e scripts para
+                                aumentar a produtividade no trabalho.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ VBA para Excel</span>
+                                <span class="highlight">✓ Automação Office</span>
+                                <span class="highlight">✓ Macros Avançadas</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 287</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ISAQE - Operating Systems Course -->
+                    <div class="course-card" data-category="development" data-level="beginner">
+                        <div class="course-image">
+                            <div class="course-icon">🐧</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level beginner">Iniciante</span>
+                                <span class="course-duration">7 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.8 (210)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Fundamentos de Linux: WSL, Ubuntu e ChromeOS</h3>
+                            <p class="course-description">
+                                Aprenda os fundamentos do Linux, incluindo instalação e uso do WSL, Ubuntu e ChromeOS
+                                para desenvolvimento e administração.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ Linux Fundamentals</span>
+                                <span class="highlight">✓ WSL & Ubuntu</span>
+                                <span class="highlight">✓ ChromeOS</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 207</span>
+                                </div>
+                                <button class="btn btn-primary">Inscrever-se</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MATHEUS - Web Development Course -->
+                    <div class="course-card" data-category="development" data-level="beginner">
+                        <div class="course-image">
+                            <div class="course-badge popular">Mais Popular</div>
+                            <div class="course-icon">🌐</div>
+                            <div class="course-overlay">
+                                <button class="btn btn-primary">Ver Detalhes</button>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-meta">
+                                <span class="course-level beginner">Iniciante</span>
+                                <span class="course-duration">8 semanas</span>
+                                <span class="course-rating">
+                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                                    </svg>
+                                    4.9 (450)
+                                </span>
+                            </div>
+                            <h3 class="course-title">Desenvolvimento Web Front-end: HTML, CSS e JavaScript</h3>
+                            <p class="course-description">
+                                Aprenda os fundamentos do desenvolvimento web front-end com HTML, CSS e JavaScript,
+                                criando sites interativos e responsivos.
+                            </p>
+                            <div class="course-highlights">
+                                <span class="highlight">✓ HTML5 & CSS3</span>
+                                <span class="highlight">✓ JavaScript Moderno</span>
+                                <span class="highlight">✓ Projetos Práticos</span>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="price-current">R$ 197</span>
+                                    <span class="price-old">R$ 297</span>
                                 </div>
                                 <button class="btn btn-primary">Inscrever-se</button>
                             </div>
@@ -467,7 +746,7 @@
         </div>
     </footer>
 
-    <script src="/nextgen/assets/script/script.js"></script>
+    <script src="../assets/script/script.js"></script>
 </body>
 
 </html>

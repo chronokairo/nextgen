@@ -5,7 +5,7 @@
    Last Updated: 2025-06-09 19:10:01
    =================================== */
 
-   class NextGenApp {
+class NextGenApp {
     constructor() {
         this.currentTheme = localStorage.getItem('theme') || 'light';
         this.isLoading = true;
@@ -15,7 +15,7 @@
     // ===================================
     // INITIALIZATION
     // ===================================
-    
+
     init() {
         // Wait for DOM to be fully loaded
         if (document.readyState === 'loading') {
@@ -27,41 +27,41 @@
 
     initializeApp() {
         console.log('🚀 NextGen Learning Hub - Initializing...');
-        
+
         // Initialize core features
         this.initTheme();
         this.initLoadingScreen();
         this.initNavigation();
         this.initScrollEffects();
         this.initAnimations();
-        
+
         // Initialize page-specific features
         this.initCoursesPage();
         this.initPricingPage();
         this.initContactPage();
         this.initAuthPages();
-        
+
         // Initialize interactive elements
         this.initFAQ();
         this.initModals();
         this.initTooltips();
-        
+
         console.log('✅ NextGen Learning Hub - Initialized successfully!');
     }
 
     // ===================================
     // THEME MANAGEMENT
     // ===================================
-    
+
     initTheme() {
         // Apply saved theme
         document.documentElement.setAttribute('data-theme', this.currentTheme);
-        
+
         // Theme toggle button
         const themeToggle = document.getElementById('theme-toggle');
         if (themeToggle) {
             themeToggle.addEventListener('click', () => this.toggleTheme());
-            
+
             // Update icon based on current theme
             this.updateThemeIcon();
         }
@@ -71,9 +71,9 @@
         this.currentTheme = this.currentTheme === 'light' ? 'dark' : 'light';
         document.documentElement.setAttribute('data-theme', this.currentTheme);
         localStorage.setItem('theme', this.currentTheme);
-        
+
         this.updateThemeIcon();
-        
+
         // Smooth transition effect
         document.body.style.transition = 'background-color 0.3s ease, color 0.3s ease';
         setTimeout(() => {
@@ -86,7 +86,7 @@
     updateThemeIcon() {
         const sunIcon = document.querySelector('.sun-icon');
         const moonIcon = document.querySelector('.moon-icon');
-        
+
         if (sunIcon && moonIcon) {
             if (this.currentTheme === 'dark') {
                 sunIcon.style.display = 'none';
@@ -101,20 +101,20 @@
     // ===================================
     // LOADING SCREEN
     // ===================================
-    
+
     initLoadingScreen() {
         const loadingScreen = document.getElementById('loading-screen');
-        
+
         if (loadingScreen) {
             // Simulate loading time
             setTimeout(() => {
                 loadingScreen.classList.add('hidden');
-                
+
                 // Remove from DOM after animation
                 setTimeout(() => {
                     loadingScreen.remove();
                 }, 500);
-                
+
                 this.isLoading = false;
                 this.triggerEntranceAnimations();
             }, 1500);
@@ -137,17 +137,17 @@
     // ===================================
     // NAVIGATION
     // ===================================
-    
+
     initNavigation() {
         // Mobile menu toggle
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
-        
+
         if (navToggle && navMenu) {
             navToggle.addEventListener('click', () => {
                 navMenu.classList.toggle('active');
                 navToggle.classList.toggle('active');
-                
+
                 // Prevent body scroll when menu is open
                 document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : '';
             });
@@ -178,7 +178,7 @@
 
         // Header scroll effect
         this.initHeaderScroll();
-        
+
         // Active link highlighting
         this.initActiveLinks();
     }
@@ -192,16 +192,16 @@
 
         const updateHeader = () => {
             const scrollY = window.scrollY;
-            
+
             if (scrollY > 100) {
-                header.style.background = this.currentTheme === 'dark' 
-                    ? 'rgba(15, 23, 42, 0.98)' 
+                header.style.background = this.currentTheme === 'dark'
+                    ? 'rgba(15, 23, 42, 0.98)'
                     : 'rgba(255, 255, 255, 0.98)';
                 header.style.backdropFilter = 'blur(20px)';
                 header.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
             } else {
-                header.style.background = this.currentTheme === 'dark' 
-                    ? 'rgba(15, 23, 42, 0.95)' 
+                header.style.background = this.currentTheme === 'dark'
+                    ? 'rgba(15, 23, 42, 0.95)'
                     : 'rgba(255, 255, 255, 0.95)';
                 header.style.boxShadow = 'none';
             }
@@ -228,10 +228,10 @@
     initActiveLinks() {
         const currentPath = window.location.pathname;
         const navLinks = document.querySelectorAll('.nav-link');
-        
+
         navLinks.forEach(link => {
             const href = link.getAttribute('href');
-            if (href && (currentPath.includes(href) || 
+            if (href && (currentPath.includes(href) ||
                 (currentPath === '/' && href === '../index.html') ||
                 (currentPath.includes('index.html') && href === '../index.html'))) {
                 link.classList.add('active');
@@ -242,7 +242,7 @@
     // ===================================
     // SCROLL EFFECTS
     // ===================================
-    
+
     initScrollEffects() {
         // Smooth scrolling for anchor links
         const anchorLinks = document.querySelectorAll('a[href^="#"]');
@@ -251,7 +251,7 @@
                 e.preventDefault();
                 const targetId = link.getAttribute('href').substring(1);
                 const targetElement = document.getElementById(targetId);
-                
+
                 if (targetElement) {
                     const offsetTop = targetElement.offsetTop - 80; // Account for fixed header
                     window.scrollTo({
@@ -290,32 +290,32 @@
     // ===================================
     // ANIMATIONS
     // ===================================
-    
+
     initAnimations() {
         // Progress bar animations
         this.initProgressBars();
-        
+
         // Counter animations
         this.initCounters();
-        
+
         // Parallax effects
         this.initParallax();
     }
 
     initProgressBars() {
         const progressBars = document.querySelectorAll('.progress-fill');
-        
+
         const animateProgress = (entries, observer) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const progressBar = entry.target;
                     const targetWidth = progressBar.style.width || progressBar.getAttribute('data-width') || '0%';
-                    
+
                     progressBar.style.width = '0%';
                     setTimeout(() => {
                         progressBar.style.width = targetWidth;
                     }, 200);
-                    
+
                     observer.unobserve(progressBar);
                 }
             });
@@ -330,13 +330,13 @@
 
     initCounters() {
         const counters = document.querySelectorAll('.stat-number');
-        
+
         const animateCounter = (counter) => {
             const target = parseInt(counter.textContent.replace(/[^\d]/g, ''));
             const duration = 2000;
             const step = target / (duration / 16);
             let current = 0;
-            
+
             const updateCounter = () => {
                 current += step;
                 if (current < target) {
@@ -352,7 +352,7 @@
                     }
                 }
             };
-            
+
             updateCounter();
         };
 
@@ -374,19 +374,19 @@
 
     initParallax() {
         const parallaxElements = document.querySelectorAll('.hero-background, .floating-elements');
-        
+
         if (parallaxElements.length === 0) return;
 
         let ticking = false;
-        
+
         const updateParallax = () => {
             const scrolled = window.pageYOffset;
-            
+
             parallaxElements.forEach(element => {
                 const rate = scrolled * -0.5;
                 element.style.transform = `translateY(${rate}px)`;
             });
-            
+
             ticking = false;
         };
 
@@ -401,58 +401,136 @@
     // ===================================
     // COURSES PAGE
     // ===================================
-    
+
     initCoursesPage() {
         // Course filtering
         this.initCourseFilters();
-        
+
         // Course search
         this.initCourseSearch();
-        
+
         // Load more functionality
         this.initLoadMore();
     }
 
     initCourseFilters() {
         const filterTabs = document.querySelectorAll('.filter-tab');
+        const levelTabs = document.querySelectorAll('.level-tab');
         const courseCards = document.querySelectorAll('.course-card');
-        
-        if (filterTabs.length === 0) return;
 
+        if (filterTabs.length === 0 && levelTabs.length === 0) return;
+
+        // Current filter states
+        let currentCategoryFilter = 'all';
+        let currentLevelFilter = 'all';
+
+        // Function to apply filters
+        const applyFilters = () => {
+            let visibleCount = 0;
+
+            courseCards.forEach((card, index) => {
+                const category = card.getAttribute('data-category');
+                const level = card.getAttribute('data-level');
+
+                const categoryMatch = currentCategoryFilter === 'all' || category === currentCategoryFilter;
+                const levelMatch = currentLevelFilter === 'all' || level === currentLevelFilter;
+                const shouldShow = categoryMatch && levelMatch;
+
+                if (shouldShow) {
+                    visibleCount++;
+                    // Show card with animation
+                    setTimeout(() => {
+                        card.style.display = 'block';
+                        card.style.position = 'relative';
+                        card.style.visibility = 'visible';
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0) scale(1)';
+                        card.style.width = '';
+                        card.style.height = '';
+                        card.style.margin = '';
+                        card.style.padding = '';
+                        card.classList.remove('course-card--hidden');
+                        card.classList.add('course-card--visible');
+                    }, index * 50);
+                } else {
+                    // Hide card completely from layout
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                        card.style.position = 'absolute';
+                        card.style.visibility = 'hidden';
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0)';
+                        card.style.width = '0';
+                        card.style.height = '0';
+                        card.style.margin = '0';
+                        card.style.padding = '0';
+                        card.style.border = 'none';
+                        card.style.overflow = 'hidden';
+                        card.classList.remove('course-card--visible');
+                        card.classList.add('course-card--hidden');
+                    }, index * 50);
+                }
+            });
+
+            // Update results counter
+            updateResultsCounter(visibleCount);
+
+            console.log(`📚 Filtering courses by category: ${currentCategoryFilter}, level: ${currentLevelFilter} (${visibleCount} visible)`);
+            console.log('🔄 Grid should reorganize now with visible cards only');
+        };
+
+        // Function to update results counter
+        const updateResultsCounter = (count) => {
+            let counterElement = document.querySelector('.courses-counter');
+            if (!counterElement) {
+                // Create counter element if it doesn't exist
+                const coursesGrid = document.querySelector('.courses-grid');
+                if (coursesGrid) {
+                    counterElement = document.createElement('div');
+                    counterElement.className = 'courses-counter';
+                    counterElement.style.cssText = `
+                        margin-bottom: 1rem;
+                        font-size: 0.875rem;
+                        color: var(--color-gray-600);
+                        font-weight: 500;
+                    `;
+                    coursesGrid.parentNode.insertBefore(counterElement, coursesGrid);
+                }
+            }
+
+            if (counterElement) {
+                const total = courseCards.length;
+                counterElement.textContent = `Mostrando ${count} de ${total} cursos`;
+            }
+        };
+
+        // Initialize all cards as visible
+        courseCards.forEach(card => {
+            card.classList.add('course-card--visible');
+        });
+
+        // Initial counter update
+        updateResultsCounter(courseCards.length);
+
+        // Category filter event listeners
         filterTabs.forEach(tab => {
             tab.addEventListener('click', () => {
-                // Update active tab
                 filterTabs.forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
-                
-                const filter = tab.getAttribute('data-filter');
-                
-                // Filter courses with animation
-                courseCards.forEach((card, index) => {
-                    const category = card.getAttribute('data-category');
-                    const shouldShow = filter === 'all' || category === filter;
-                    
-                    setTimeout(() => {
-                        if (shouldShow) {
-                            card.style.display = 'block';
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            
-                            setTimeout(() => {
-                                card.style.opacity = '1';
-                                card.style.transform = 'translateY(0)';
-                            }, 50);
-                        } else {
-                            card.style.opacity = '0';
-                            card.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                card.style.display = 'none';
-                            }, 300);
-                        }
-                    }, index * 50);
-                });
-                
-                console.log(`📚 Filtering courses by: ${filter}`);
+
+                currentCategoryFilter = tab.getAttribute('data-filter');
+                applyFilters();
+            });
+        });
+
+        // Level filter event listeners
+        levelTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                levelTabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                currentLevelFilter = tab.getAttribute('data-level');
+                applyFilters();
             });
         });
     }
@@ -460,33 +538,120 @@
     initCourseSearch() {
         const searchInput = document.getElementById('course-search');
         const courseCards = document.querySelectorAll('.course-card');
-        
+
         if (!searchInput) return;
 
         let searchTimeout;
-        
+        let currentCategoryFilter = 'all';
+        let currentLevelFilter = 'all';
+
+        // Function to apply combined filters and search
+        const applySearchAndFilters = () => {
+            const searchTerm = searchInput.value.toLowerCase().trim();
+            let visibleCount = 0;
+
+            courseCards.forEach(card => {
+                const title = card.querySelector('.course-title')?.textContent.toLowerCase() || '';
+                const description = card.querySelector('.course-description')?.textContent.toLowerCase() || '';
+                const category = card.getAttribute('data-category');
+                const level = card.getAttribute('data-level');
+
+                const searchMatch = !searchTerm || title.includes(searchTerm) || description.includes(searchTerm);
+                const categoryMatch = currentCategoryFilter === 'all' || category === currentCategoryFilter;
+                const levelMatch = currentLevelFilter === 'all' || level === currentLevelFilter;
+                const shouldShow = searchMatch && categoryMatch && levelMatch;
+
+                if (shouldShow) {
+                    visibleCount++;
+                    card.style.display = 'block';
+                    card.style.position = 'relative';
+                    card.style.visibility = 'visible';
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0) scale(1)';
+                    card.style.width = '';
+                    card.style.height = '';
+                    card.style.margin = '';
+                    card.style.padding = '';
+                    card.classList.remove('course-card--hidden');
+                    card.classList.add('course-card--visible');
+                } else {
+                    card.style.display = 'none';
+                    card.style.position = 'absolute';
+                    card.style.visibility = 'hidden';
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0)';
+                    card.style.width = '0';
+                    card.style.height = '0';
+                    card.style.margin = '0';
+                    card.style.padding = '0';
+                    card.style.border = 'none';
+                    card.style.overflow = 'hidden';
+                    card.classList.remove('course-card--visible');
+                    card.classList.add('course-card--hidden');
+                }
+            });
+
+            // Update results counter
+            updateResultsCounter(visibleCount);
+
+            console.log(`🔍 Searching courses for: "${searchTerm}" with filters - category: ${currentCategoryFilter}, level: ${currentLevelFilter} (${visibleCount} visible)`);
+        };
+
+        // Function to update results counter
+        const updateResultsCounter = (count) => {
+            let counterElement = document.querySelector('.courses-counter');
+            if (!counterElement) {
+                // Create counter element if it doesn't exist
+                const coursesGrid = document.querySelector('.courses-grid');
+                if (coursesGrid) {
+                    counterElement = document.createElement('div');
+                    counterElement.className = 'courses-counter';
+                    counterElement.style.cssText = `
+                        margin-bottom: 1rem;
+                        font-size: 0.875rem;
+                        color: var(--color-gray-600);
+                        font-weight: 500;
+                    `;
+                    coursesGrid.parentNode.insertBefore(counterElement, coursesGrid);
+                }
+            }
+
+            if (counterElement) {
+                const total = courseCards.length;
+                counterElement.textContent = `Mostrando ${count} de ${total} cursos`;
+            }
+        };
+
         searchInput.addEventListener('input', (e) => {
             clearTimeout(searchTimeout);
-            
+
             searchTimeout = setTimeout(() => {
-                const searchTerm = e.target.value.toLowerCase().trim();
-                
-                courseCards.forEach(card => {
-                    const title = card.querySelector('.course-title')?.textContent.toLowerCase() || '';
-                    const description = card.querySelector('.course-description')?.textContent.toLowerCase() || '';
-                    const shouldShow = title.includes(searchTerm) || description.includes(searchTerm);
-                    
-                    card.style.display = shouldShow ? 'block' : 'none';
-                });
-                
-                console.log(`🔍 Searching courses for: "${searchTerm}"`);
+                applySearchAndFilters();
             }, 300);
+        });
+
+        // Listen for filter changes to update search results
+        const filterTabs = document.querySelectorAll('.filter-tab');
+        const levelTabs = document.querySelectorAll('.level-tab');
+
+        filterTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                currentCategoryFilter = tab.getAttribute('data-filter');
+                applySearchAndFilters();
+            });
+        });
+
+        levelTabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                currentLevelFilter = tab.getAttribute('data-level');
+                applySearchAndFilters();
+            });
         });
     }
 
     initLoadMore() {
         const loadMoreBtn = document.getElementById('load-more');
-        
+
         if (!loadMoreBtn) return;
 
         loadMoreBtn.addEventListener('click', () => {
@@ -497,7 +662,7 @@
                 </svg>
                 Carregando...
             `;
-            
+
             setTimeout(() => {
                 // Reset button
                 loadMoreBtn.innerHTML = `
@@ -506,7 +671,7 @@
                         <path d="M12 5v14M5 12h14"/>
                     </svg>
                 `;
-                
+
                 // Here you would normally load more courses from an API
                 console.log('📚 Loading more courses...');
             }, 1000);
@@ -516,7 +681,7 @@
     // ===================================
     // PRICING PAGE
     // ===================================
-    
+
     initPricingPage() {
         // Billing toggle (monthly/yearly)
         this.initBillingToggle();
@@ -527,24 +692,24 @@
         const monthlyPrices = document.querySelectorAll('.price-monthly');
         const yearlyPrices = document.querySelectorAll('.price-yearly');
         const yearlyNotes = document.querySelectorAll('.yearly-note');
-        
+
         if (!billingToggle) return;
 
         billingToggle.addEventListener('click', () => {
             const isYearly = billingToggle.classList.toggle('active');
-            
+
             monthlyPrices.forEach(price => {
                 price.classList.toggle('hidden', isYearly);
             });
-            
+
             yearlyPrices.forEach(price => {
                 price.classList.toggle('hidden', !isYearly);
             });
-            
+
             yearlyNotes.forEach(note => {
                 note.classList.toggle('hidden', !isYearly);
             });
-            
+
             console.log(`💰 Switched to ${isYearly ? 'yearly' : 'monthly'} billing`);
         });
     }
@@ -552,7 +717,7 @@
     // ===================================
     // CONTACT PAGE
     // ===================================
-    
+
     initContactPage() {
         // Contact form handling
         this.initContactForm();
@@ -560,37 +725,37 @@
 
     initContactForm() {
         const contactForm = document.getElementById('contact-form');
-        
+
         if (!contactForm) return;
 
         contactForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
+
             const submitBtn = contactForm.querySelector('button[type="submit"]');
             const btnText = submitBtn.querySelector('.btn-text');
             const btnLoading = submitBtn.querySelector('.btn-loading');
             const successMsg = document.getElementById('form-success');
             const errorMsg = document.getElementById('form-error');
-            
+
             // Show loading state
             btnText.style.display = 'none';
             btnLoading.style.display = 'flex';
             submitBtn.disabled = true;
-            
+
             // Hide previous messages
             successMsg.classList.add('hidden');
             errorMsg.classList.add('hidden');
-            
+
             try {
                 // Simulate form submission
                 await new Promise(resolve => setTimeout(resolve, 2000));
-                
+
                 // Show success message
                 successMsg.classList.remove('hidden');
                 contactForm.reset();
-                
+
                 console.log('📧 Contact form submitted successfully');
-                
+
             } catch (error) {
                 // Show error message
                 errorMsg.classList.remove('hidden');
@@ -607,24 +772,24 @@
     // ===================================
     // AUTH PAGES
     // ===================================
-    
+
     initAuthPages() {
         // Password visibility toggle
         this.initPasswordToggle();
-        
+
         // Form validation
         this.initFormValidation();
     }
 
     initPasswordToggle() {
         const passwordToggles = document.querySelectorAll('.password-toggle');
-        
+
         passwordToggles.forEach(toggle => {
             toggle.addEventListener('click', () => {
                 const passwordInput = toggle.parentElement.querySelector('input[type="password"], input[type="text"]');
                 const eyeOpen = toggle.querySelector('.eye-open');
                 const eyeClosed = toggle.querySelector('.eye-closed');
-                
+
                 if (passwordInput.type === 'password') {
                     passwordInput.type = 'text';
                     eyeOpen.style.display = 'none';
@@ -640,15 +805,15 @@
 
     initFormValidation() {
         const forms = document.querySelectorAll('.auth-form');
-        
+
         forms.forEach(form => {
             const inputs = form.querySelectorAll('input[required]');
-            
+
             inputs.forEach(input => {
                 input.addEventListener('blur', () => this.validateField(input));
                 input.addEventListener('input', () => this.clearFieldError(input));
             });
-            
+
             form.addEventListener('submit', (e) => {
                 e.preventDefault();
                 this.handleFormSubmit(form);
@@ -661,10 +826,10 @@
         const type = field.type;
         let isValid = true;
         let errorMessage = '';
-        
+
         // Remove existing error
         this.clearFieldError(field);
-        
+
         // Required field validation
         if (!value) {
             isValid = false;
@@ -680,11 +845,11 @@
             isValid = false;
             errorMessage = 'Senha deve ter pelo menos 6 caracteres';
         }
-        
+
         if (!isValid) {
             this.showFieldError(field, errorMessage);
         }
-        
+
         return isValid;
     }
 
@@ -698,14 +863,14 @@
 
     showFieldError(field, message) {
         field.classList.add('error');
-        
+
         const errorElement = document.createElement('div');
         errorElement.className = 'field-error';
         errorElement.textContent = message;
         errorElement.style.color = '#ef4444';
         errorElement.style.fontSize = '0.875rem';
         errorElement.style.marginTop = '0.25rem';
-        
+
         field.parentElement.appendChild(errorElement);
     }
 
@@ -717,22 +882,22 @@
     async handleFormSubmit(form) {
         const inputs = form.querySelectorAll('input[required]');
         let isFormValid = true;
-        
+
         // Validate all fields
         inputs.forEach(input => {
             if (!this.validateField(input)) {
                 isFormValid = false;
             }
         });
-        
+
         if (!isFormValid) {
             console.log('❌ Form validation failed');
             return;
         }
-        
+
         const submitBtn = form.querySelector('button[type="submit"]');
         const formData = new FormData(form);
-        
+
         // Show loading state
         submitBtn.disabled = true;
         submitBtn.innerHTML = `
@@ -741,29 +906,29 @@
             </svg>
             Processando...
         `;
-        
+
         try {
             // Simulate API call
             await new Promise(resolve => setTimeout(resolve, 2000));
-            
+
             console.log('✅ Form submitted successfully');
-            
+
             // Redirect or show success message
             if (form.id === 'login-form') {
                 window.location.href = '../index.html';
             } else if (form.id === 'register-form') {
                 window.location.href = 'login.html';
             }
-            
+
         } catch (error) {
             console.error('❌ Form submission failed:', error);
-            
+
             // Show error message
             const errorDiv = document.createElement('div');
             errorDiv.className = 'form-error';
             errorDiv.textContent = 'Erro ao processar solicitação. Tente novamente.';
             form.appendChild(errorDiv);
-            
+
         } finally {
             // Reset button
             submitBtn.disabled = false;
@@ -774,16 +939,16 @@
     // ===================================
     // FAQ FUNCTIONALITY
     // ===================================
-    
+
     initFAQ() {
         const faqQuestions = document.querySelectorAll('.faq-question');
-        
+
         faqQuestions.forEach(question => {
             question.addEventListener('click', () => {
                 const faqId = question.getAttribute('data-faq');
                 const answer = document.getElementById(`faq-${faqId}`);
                 const isActive = question.classList.contains('active');
-                
+
                 // Close all other FAQs
                 faqQuestions.forEach(q => {
                     q.classList.remove('active');
@@ -793,7 +958,7 @@
                         answerEl.classList.remove('active');
                     }
                 });
-                
+
                 // Toggle current FAQ
                 if (!isActive) {
                     question.classList.add('active');
@@ -801,7 +966,7 @@
                         answer.classList.add('active');
                     }
                 }
-                
+
                 console.log(`❓ FAQ ${faqId} ${isActive ? 'closed' : 'opened'}`);
             });
         });
@@ -810,11 +975,11 @@
     // ===================================
     // MODALS & TOOLTIPS
     // ===================================
-    
+
     initModals() {
         // Course detail modals
         const courseCards = document.querySelectorAll('.course-card');
-        
+
         courseCards.forEach(card => {
             const detailBtn = card.querySelector('.course-overlay .btn');
             if (detailBtn) {
@@ -849,15 +1014,15 @@
                 </div>
             </div>
         `;
-        
+
         document.body.appendChild(modal);
-        
+
         // Add close functionality
         const closeModal = () => {
             modal.remove();
             document.body.style.overflow = '';
         };
-        
+
         modal.querySelector('.modal-close').addEventListener('click', closeModal);
         modal.querySelector('.btn-outline').addEventListener('click', closeModal);
         modal.querySelector('.modal-backdrop').addEventListener('click', (e) => {
@@ -865,16 +1030,16 @@
                 closeModal();
             }
         });
-        
+
         // Prevent body scroll
         document.body.style.overflow = 'hidden';
-        
+
         console.log(`📋 Opened course modal for: ${courseTitle}`);
     }
 
     initTooltips() {
         const tooltipElements = document.querySelectorAll('[data-tooltip]');
-        
+
         tooltipElements.forEach(element => {
             element.addEventListener('mouseenter', (e) => this.showTooltip(e));
             element.addEventListener('mouseleave', () => this.hideTooltip());
@@ -884,7 +1049,7 @@
     showTooltip(e) {
         const element = e.target;
         const text = element.getAttribute('data-tooltip');
-        
+
         const tooltip = document.createElement('div');
         tooltip.className = 'tooltip';
         tooltip.textContent = text;
@@ -900,19 +1065,19 @@
             opacity: 0;
             transition: opacity 0.2s ease;
         `;
-        
+
         document.body.appendChild(tooltip);
-        
+
         // Position tooltip
         const rect = element.getBoundingClientRect();
         tooltip.style.left = `${rect.left + rect.width / 2 - tooltip.offsetWidth / 2}px`;
         tooltip.style.top = `${rect.top - tooltip.offsetHeight - 8}px`;
-        
+
         // Show tooltip
         requestAnimationFrame(() => {
             tooltip.style.opacity = '1';
         });
-        
+
         this.currentTooltip = tooltip;
     }
 
@@ -929,7 +1094,7 @@
     // ===================================
     // UTILITY METHODS
     // ===================================
-    
+
     // Debounce function for performance
     debounce(func, wait) {
         let timeout;
@@ -946,7 +1111,7 @@
     // Throttle function for scroll events
     throttle(func, limit) {
         let inThrottle;
-        return function() {
+        return function () {
             const args = arguments;
             const context = this;
             if (!inThrottle) {
@@ -966,7 +1131,7 @@
     // Log user interaction for analytics
     logInteraction(action, details = {}) {
         console.log(`📊 User Interaction: ${action}`, details);
-        
+
         // Here you would send data to your analytics service
         // Example: Google Analytics, Mixpanel, etc.
     }
